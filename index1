@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore World Travels</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+header{
+    background:#0077b6;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#023e8a;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600') center/cover;
+    color:white;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.destinations{
+    padding:50px 10%;
+}
+
+.destinations h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.place-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#0077b6;
+    font-weight:bold;
+}
+
+.about, .contact{
+    padding:50px 10%;
+    text-align:center;
+}
+
+footer{
+    background:#023e8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Explore World Travels</h1>
+    <p>Your Journey Begins Here</p>
+</header>
+
+<nav>
+    <a href="#destinations">Destinations</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Discover Amazing Places</h1>
+    <p>Travel the world with comfort and confidence.</p>
+</section>
+
+<section id="destinations" class="destinations">
+    <h2>Popular Destinations</h2>
+
+    <div class="place-grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800">
+            <div class="card-content">
+                <h3>Paris</h3>
+                <p>Experience the city of love and iconic landmarks.</p>
+                <p class="price">Starting ₹59,999</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800">
+            <div class="card-content">
+                <h3>Tokyo</h3>
+                <p>Explore modern culture and historic traditions.</p>
+                <p class="price">Starting ₹79,999</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=800">
+            <div class="card-content">
+                <h3>Dubai</h3>
+                <p>Luxury shopping, stunning architecture, and adventure.</p>
+                <p class="price">Starting ₹45,999</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+        Explore World Travels helps travelers discover the best destinations
+        around the globe. We provide customized travel packages, hotel bookings,
+        and unforgettable experiences.
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Pune, Maharashtra</p>
+    <p>📞 +91 98765 12345</p>
+    <p>✉️ info@exploreworldtravels.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Explore World Travels. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
